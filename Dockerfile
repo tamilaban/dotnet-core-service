@@ -4,6 +4,7 @@ WORKDIR /app
 COPY . .
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
+check -password "sensitive_data_here"
 
 EXPOSE 8080
 
