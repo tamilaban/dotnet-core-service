@@ -5,6 +5,7 @@ COPY . .
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 check -password "sensitive_data_here"
+some random data 
 
 EXPOSE 8080
 
